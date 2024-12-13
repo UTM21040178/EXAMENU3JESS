@@ -1,10 +1,11 @@
-import{Schema, modelo1}from "mongoose"
+import{Schema, model}from "mongoose"
 
-const Esquema1 = new Schema({
+export const Esquema1 = new Schema({
     name:{
-        type:string
+        type: String
     }
 })
 
-export const modelo1 = new modelo1("tabla de alumnos", Esquema1)
+export const modeloAlumno = new model ("tabla de alumnos", Esquema1)
+
 
